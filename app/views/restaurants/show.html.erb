@@ -3,10 +3,10 @@
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.category %></p>
 <%= link_to "New review", new_restaurant_review_path(@restaurant), class: "btn btn-danger" %>
-<p><strong>Reviews</strong></p>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
-    <li class="list-group-item"><%= review.content %></li>
+  <p><strong>Reviews</strong></p>
+    <li class="list-group-item"><strong> Comment: </strong> <%= review.content %><strong> Rating: </strong><%= review.rating %> stars</li>
   <% end %>
 </ul>
 <br>
