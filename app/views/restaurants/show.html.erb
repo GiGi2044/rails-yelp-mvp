@@ -2,7 +2,10 @@
 <h2><%= @restaurant.name %></h2>
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.category %></p>
+<div class="show-btn">
 <%= link_to "New review", new_restaurant_review_path(@restaurant), class: "btn btn-danger" %>
+<%= link_to "All Restaurants", restaurants_path, class: "btn btn-danger" %>
+</div>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
   <p><strong>Reviews</strong></p>

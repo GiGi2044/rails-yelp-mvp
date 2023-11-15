@@ -16,9 +16,12 @@
 body{
   background-color: #303030;
 }
-h1, h2, p{
+h1{
   color: #ececec;
   padding: 20px 0px 20px 0px;
+}
+h2, p{
+  color: #ececec;
 }
 
 .btn-margin{
@@ -32,4 +35,37 @@ ul{
 .container{
   justify-content: center;
   text-align: center;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#fb8916, #c4640f);
+  border: 1px solid #0F60C4;
+  margin: 0px 55px;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#ff7a14, #da710f);
+  color: white;
+}
+
+#new_restaurant_btn {
+  color: white;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#fb8916, #c4640f);
+  border: 1px solid #0F60C4;
+  margin: 20px 0px;
+}
+.btn-danger {
+  color: white;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#fb8916, #c4640f);
+  border: 1px solid #0F60C4;
 }
